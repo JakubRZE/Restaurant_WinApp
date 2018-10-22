@@ -12,6 +12,12 @@ namespace RestaurantApp
 {
     public partial class Form1 : Form
     {
+        public void SidePanelSetup(Button sender)
+        {
+            SidePanel.Height = sender.Height;
+            SidePanel.Top = sender.Top;
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +25,45 @@ namespace RestaurantApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            SidePanelSetup(homeBtn);
+            //DefaultControl.BringToFront();
+        }
 
+        private void homeBtn_Click(object sender, EventArgs e)
+        {
+            SidePanelSetup(homeBtn);
+            //DefaultControl.BringToFront();
+        }
+
+        private void menuBtn_Click(object sender, EventArgs e)
+        {
+            SidePanelSetup(menuBtn);
+            // MenuControl.BringToFront();
+        }
+
+        private void restaurBtn_Click(object sender, EventArgs e)
+        {
+            SidePanelSetup(restaurBtn);
+        }
+
+        private void nutBtn_Click(object sender, EventArgs e)
+        {
+            SidePanelSetup(nutBtn);
+        }
+
+        private void accountBtn_Click(object sender, EventArgs e)
+        {
+            SidePanelSetup(accountBtn);
+        }
+
+        private void contactBtn_Click(object sender, EventArgs e)
+        {
+            SidePanelSetup(contactBtn);
+        }
+
+        private void ExitpictureBox_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
