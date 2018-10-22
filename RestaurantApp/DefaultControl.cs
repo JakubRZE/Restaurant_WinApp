@@ -16,5 +16,22 @@ namespace RestaurantApp
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SignInLabel_Click(object sender, EventArgs e)
+        {
+            SignInLabel.ForeColor = Color.Red;
+        }
+
+        private void SignInLabel_MouseHover(object sender, System.EventArgs e)
+        {
+            // Update the mouse event label to indicate the MouseHover event occurred.
+            SignInLabel.ForeColor = Color.Red;
+        }
+
     }
 }

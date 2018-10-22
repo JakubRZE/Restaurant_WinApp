@@ -12,6 +12,18 @@ namespace RestaurantApp
 {
     public partial class MenuControl : UserControl
     {
+
+        //private static MenuControl _instance;
+        //public static MenuControl Instance
+        //{
+        //    get
+        //    {
+        //        if (_instance == null)
+        //            _instance = new MenuControl();
+        //        return _instance;
+        //    }
+        //}
+
         public MenuControl()
         {
             InitializeComponent();

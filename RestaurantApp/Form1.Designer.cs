@@ -41,8 +41,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.SettingspictureBox = new System.Windows.Forms.PictureBox();
             this.ExitpictureBox = new System.Windows.Forms.PictureBox();
-            this.menuControl1 = new RestaurantApp.MenuControl();
             this.defaultControl1 = new RestaurantApp.DefaultControl();
+            this.menuControl1 = new RestaurantApp.MenuControl();
             this.loginControl1 = new RestaurantApp.LoginControl();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -218,19 +218,19 @@
             this.ExitpictureBox.TabStop = false;
             this.ExitpictureBox.Click += new System.EventHandler(this.ExitpictureBox_Click);
             // 
-            // menuControl1
-            // 
-            this.menuControl1.Location = new System.Drawing.Point(175, 50);
-            this.menuControl1.Name = "menuControl1";
-            this.menuControl1.Size = new System.Drawing.Size(654, 412);
-            this.menuControl1.TabIndex = 6;
-            // 
             // defaultControl1
             // 
             this.defaultControl1.Location = new System.Drawing.Point(175, 50);
             this.defaultControl1.Name = "defaultControl1";
             this.defaultControl1.Size = new System.Drawing.Size(654, 412);
             this.defaultControl1.TabIndex = 5;
+            // 
+            // menuControl1
+            // 
+            this.menuControl1.Location = new System.Drawing.Point(175, 50);
+            this.menuControl1.Name = "menuControl1";
+            this.menuControl1.Size = new System.Drawing.Size(654, 412);
+            this.menuControl1.TabIndex = 6;
             // 
             // loginControl1
             // 

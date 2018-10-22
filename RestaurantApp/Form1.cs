@@ -26,19 +26,20 @@ namespace RestaurantApp
         private void Form1_Load(object sender, EventArgs e)
         {
             SidePanelSetup(homeBtn);
-            //DefaultControl.BringToFront();
+            defaultControl1.BringToFront();
         }
 
         private void homeBtn_Click(object sender, EventArgs e)
         {
             SidePanelSetup(homeBtn);
-            //DefaultControl.BringToFront();
+            defaultControl1.BringToFront();
+
         }
 
         private void menuBtn_Click(object sender, EventArgs e)
         {
             SidePanelSetup(menuBtn);
-            // MenuControl.BringToFront();
+            menuControl1.BringToFront();
         }
 
         private void restaurBtn_Click(object sender, EventArgs e)
@@ -54,6 +55,7 @@ namespace RestaurantApp
         private void accountBtn_Click(object sender, EventArgs e)
         {
             SidePanelSetup(accountBtn);
+            loginControl1.BringToFront();
         }
 
         private void contactBtn_Click(object sender, EventArgs e)
