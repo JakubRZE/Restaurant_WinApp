@@ -45,11 +45,13 @@ namespace RestaurantApp
         private void restaurBtn_Click(object sender, EventArgs e)
         {
             SidePanelSetup(restaurBtn);
+            restaurantControl1.BringToFront();
         }
 
         private void nutBtn_Click(object sender, EventArgs e)
         {
             SidePanelSetup(nutBtn);
+           nutritionControl1.BringToFront();
         }
 
         private void accountBtn_Click(object sender, EventArgs e)
@@ -61,6 +63,7 @@ namespace RestaurantApp
         private void contactBtn_Click(object sender, EventArgs e)
         {
             SidePanelSetup(contactBtn);
+            contactControl1.BringToFront();
         }
 
         private void ExitpictureBox_Click(object sender, EventArgs e)

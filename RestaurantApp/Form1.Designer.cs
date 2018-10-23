@@ -44,6 +44,9 @@
             this.defaultControl1 = new RestaurantApp.DefaultControl();
             this.menuControl1 = new RestaurantApp.MenuControl();
             this.loginControl1 = new RestaurantApp.LoginControl();
+            this.restaurantControl1 = new RestaurantApp.RestaurantControl();
+            this.nutritionControl1 = new RestaurantApp.NutritionControl();
+            this.contactControl1 = new RestaurantApp.ContactControl();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SettingspictureBox)).BeginInit();
@@ -239,11 +242,35 @@
             this.loginControl1.Size = new System.Drawing.Size(654, 412);
             this.loginControl1.TabIndex = 7;
             // 
+            // restaurantControl1
+            // 
+            this.restaurantControl1.Location = new System.Drawing.Point(175, 50);
+            this.restaurantControl1.Name = "restaurantControl1";
+            this.restaurantControl1.Size = new System.Drawing.Size(654, 412);
+            this.restaurantControl1.TabIndex = 8;
+            // 
+            // nutritionControl1
+            // 
+            this.nutritionControl1.Location = new System.Drawing.Point(175, 50);
+            this.nutritionControl1.Name = "nutritionControl1";
+            this.nutritionControl1.Size = new System.Drawing.Size(654, 412);
+            this.nutritionControl1.TabIndex = 9;
+            // 
+            // contactControl1
+            // 
+            this.contactControl1.Location = new System.Drawing.Point(175, 50);
+            this.contactControl1.Name = "contactControl1";
+            this.contactControl1.Size = new System.Drawing.Size(654, 412);
+            this.contactControl1.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(829, 462);
+            this.Controls.Add(this.contactControl1);
+            this.Controls.Add(this.nutritionControl1);
+            this.Controls.Add(this.restaurantControl1);
             this.Controls.Add(this.loginControl1);
             this.Controls.Add(this.menuControl1);
             this.Controls.Add(this.defaultControl1);
@@ -283,6 +310,9 @@
         private DefaultControl defaultControl1;
         private MenuControl menuControl1;
         private LoginControl loginControl1;
+        private RestaurantControl restaurantControl1;
+        private NutritionControl nutritionControl1;
+        private ContactControl contactControl1;
     }
 }
 

@@ -17,20 +17,29 @@ namespace RestaurantApp
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void SignInLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            //Form1.loginControl1.BringToFront();
         }
 
-        private void SignInLabel_Click(object sender, EventArgs e)
+        private void SignInLink_MouseEnter(object sender, EventArgs e)
         {
-            SignInLabel.ForeColor = Color.Red;
+            SignInLink.LinkColor = Color.Olive;
         }
 
-        private void SignInLabel_MouseHover(object sender, System.EventArgs e)
+        private void SignInLink_MouseLeave(object sender, EventArgs e)
         {
-            // Update the mouse event label to indicate the MouseHover event occurred.
-            SignInLabel.ForeColor = Color.Red;
+            SignInLink.LinkColor = Color.Gold;
+        }
+
+        private void newAccountLabel_MouseEnter(object sender, EventArgs e)
+        {
+            newAccountLabel.LinkColor = Color.Olive;
+        }
+
+        private void newAccountLabel_MouseLeave(object sender, EventArgs e)
+        {
+            newAccountLabel.LinkColor = Color.Gold;
         }
 
     }
