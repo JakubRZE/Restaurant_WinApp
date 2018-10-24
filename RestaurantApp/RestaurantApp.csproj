@@ -90,6 +90,7 @@
     <Compile Include="RestaurantControl.Designer.cs">
       <DependentUpon>RestaurantControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Services\SidePanelSetup.cs" />
     <EmbeddedResource Include="ContactControl.resx">
       <DependentUpon>ContactControl.cs</DependentUpon>
     </EmbeddedResource>

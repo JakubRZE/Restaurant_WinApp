@@ -7,62 +7,61 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RestaurantApp.Services;
 
 namespace RestaurantApp
 {
     public partial class Form1 : Form
     {
-        public void SidePanelSetup(Button sender)
-        {
-            SidePanel.Height = sender.Height;
-            SidePanel.Top = sender.Top;
-        }
 
         public Form1()
         {
             InitializeComponent();
+            defaultControl1.control = loginControl1;
+            defaultControl1.panel =SidePanel;
+            defaultControl1.button = accountBtn;
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            SidePanelSetup(homeBtn);
+            SidePanelSetup.Setup(SidePanel,homeBtn);
             defaultControl1.BringToFront();
         }
 
         private void homeBtn_Click(object sender, EventArgs e)
         {
-            SidePanelSetup(homeBtn);
+            SidePanelSetup.Setup(SidePanel, homeBtn);
             defaultControl1.BringToFront();
-
         }
 
         private void menuBtn_Click(object sender, EventArgs e)
         {
-            SidePanelSetup(menuBtn);
+            SidePanelSetup.Setup(SidePanel, menuBtn);
             menuControl1.BringToFront();
         }
 
         private void restaurBtn_Click(object sender, EventArgs e)
         {
-            SidePanelSetup(restaurBtn);
+            SidePanelSetup.Setup(SidePanel, restaurBtn);
             restaurantControl1.BringToFront();
         }
 
         private void nutBtn_Click(object sender, EventArgs e)
         {
-            SidePanelSetup(nutBtn);
-           nutritionControl1.BringToFront();
+            SidePanelSetup.Setup(SidePanel, nutBtn);
+            nutritionControl1.BringToFront();
         }
 
         private void accountBtn_Click(object sender, EventArgs e)
         {
-            SidePanelSetup(accountBtn);
+            SidePanelSetup.Setup(SidePanel, accountBtn);
             loginControl1.BringToFront();
         }
 
         private void contactBtn_Click(object sender, EventArgs e)
         {
-            SidePanelSetup(contactBtn);
+            SidePanelSetup.Setup(SidePanel, contactBtn);
             contactControl1.BringToFront();
         }
 

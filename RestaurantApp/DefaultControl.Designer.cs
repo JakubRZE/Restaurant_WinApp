@@ -102,6 +102,7 @@
             this.newAccountLabel.TabStop = true;
             this.newAccountLabel.Text = "Create new account";
             this.newAccountLabel.VisitedLinkColor = System.Drawing.Color.Gold;
+            this.newAccountLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.newAccountLabel_LinkClicked);
             this.newAccountLabel.MouseEnter += new System.EventHandler(this.newAccountLabel_MouseEnter);
             this.newAccountLabel.MouseLeave += new System.EventHandler(this.newAccountLabel_MouseLeave);
             // 
