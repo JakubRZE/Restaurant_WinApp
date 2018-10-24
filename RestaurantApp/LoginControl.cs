@@ -16,5 +16,15 @@ namespace RestaurantApp
         {
             InitializeComponent();
         }
+
+        private void noAccountlinkLabel_MouseEnter(object sender, EventArgs e)
+        {
+            noAccountlinkLabel.LinkColor = Color.DarkOliveGreen;
+        }
+
+        private void noAccountlinkLabel_MouseLeave(object sender, EventArgs e)
+        {
+            noAccountlinkLabel.LinkColor = Color.Olive;
+        }
     }
 }
