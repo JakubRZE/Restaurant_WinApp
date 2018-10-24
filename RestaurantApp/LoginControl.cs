@@ -26,5 +26,25 @@ namespace RestaurantApp
         {
             noAccountlinkLabel.LinkColor = Color.Olive;
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void haveAccountlinkLabel_MouseEnter(object sender, EventArgs e)
+        {
+            haveAccountlinkLabel.LinkColor = Color.DarkOliveGreen;
+        }
+
+        private void haveAccountlinkLabel_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void haveAccountlinkLabel_MouseLeave(object sender, EventArgs e)
+        {
+            haveAccountlinkLabel.LinkColor = Color.Olive;
+        }
     }
 }
