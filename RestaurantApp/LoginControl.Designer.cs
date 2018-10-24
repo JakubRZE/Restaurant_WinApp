@@ -79,6 +79,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pswtextBox
             // 
@@ -152,7 +153,7 @@
             this.registergroupBox.Controls.Add(this.label1);
             this.registergroupBox.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.registergroupBox.ForeColor = System.Drawing.Color.Olive;
-            this.registergroupBox.Location = new System.Drawing.Point(93, 20);
+            this.registergroupBox.Location = new System.Drawing.Point(354, 17);
             this.registergroupBox.Name = "registergroupBox";
             this.registergroupBox.Size = new System.Drawing.Size(461, 313);
             this.registergroupBox.TabIndex = 3;
@@ -185,6 +186,7 @@
             this.regSubButton.TabIndex = 6;
             this.regSubButton.Text = "Submit";
             this.regSubButton.UseVisualStyleBackColor = true;
+            this.regSubButton.Click += new System.EventHandler(this.regSubButton_Click);
             // 
             // textBox3
             // 
