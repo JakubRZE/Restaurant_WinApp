@@ -13,7 +13,7 @@ namespace RestaurantApp
 {
     public partial class DefaultControl : UserControl
     {
-        public UserControl control { get; set; }
+        public LoginControl control { get; set; }
         public Panel panel { get; set; }
         public Button button { get; set; }
 
@@ -25,6 +25,7 @@ namespace RestaurantApp
         private void SignInLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             SidePanelSetup.Setup(panel, button);
+            control.ShowLoginForm();
             control.BringToFront();
         }
 
@@ -51,6 +52,7 @@ namespace RestaurantApp
         private void newAccountLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             SidePanelSetup.Setup(panel, button);
+            control.ShowRegisterForm();
             control.BringToFront();
         }
     }

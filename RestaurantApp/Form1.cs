@@ -56,6 +56,7 @@ namespace RestaurantApp
         private void accountBtn_Click(object sender, EventArgs e)
         {
             SidePanelSetup.Setup(SidePanel, accountBtn);
+            loginControl1.ShowLoginForm();
             loginControl1.BringToFront();
         }
 

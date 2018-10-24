@@ -30,25 +30,25 @@
         {
             this.components = new System.ComponentModel.Container();
             this.loginBox = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.userNameLabel = new System.Windows.Forms.Label();
-            this.pswLabel = new System.Windows.Forms.Label();
-            this.nametextBox = new System.Windows.Forms.TextBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.pswtextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.pswtextBox = new System.Windows.Forms.TextBox();
+            this.nametextBox = new System.Windows.Forms.TextBox();
+            this.pswLabel = new System.Windows.Forms.Label();
+            this.userNameLabel = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.noAccountlinkLabel = new System.Windows.Forms.LinkLabel();
             this.registergroupBox = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.regSubButton = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.regSubButton = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.haveAccountlinkLabel = new System.Windows.Forms.LinkLabel();
             this.loginBox.SuspendLayout();
             this.registergroupBox.SuspendLayout();
@@ -63,52 +63,12 @@
             this.loginBox.Controls.Add(this.userNameLabel);
             this.loginBox.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.loginBox.ForeColor = System.Drawing.Color.Olive;
-            this.loginBox.Location = new System.Drawing.Point(93, 32);
+            this.loginBox.Location = new System.Drawing.Point(93, 17);
             this.loginBox.Name = "loginBox";
             this.loginBox.Size = new System.Drawing.Size(444, 278);
             this.loginBox.TabIndex = 0;
             this.loginBox.TabStop = false;
             this.loginBox.Text = "Log in";
-            // 
-            // userNameLabel
-            // 
-            this.userNameLabel.AutoSize = true;
-            this.userNameLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.userNameLabel.Location = new System.Drawing.Point(36, 81);
-            this.userNameLabel.Name = "userNameLabel";
-            this.userNameLabel.Size = new System.Drawing.Size(125, 27);
-            this.userNameLabel.TabIndex = 0;
-            this.userNameLabel.Text = "User name";
-            // 
-            // pswLabel
-            // 
-            this.pswLabel.AutoSize = true;
-            this.pswLabel.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.pswLabel.Location = new System.Drawing.Point(36, 150);
-            this.pswLabel.Name = "pswLabel";
-            this.pswLabel.Size = new System.Drawing.Size(115, 27);
-            this.pswLabel.TabIndex = 1;
-            this.pswLabel.Text = "Password";
-            // 
-            // nametextBox
-            // 
-            this.nametextBox.Location = new System.Drawing.Point(189, 78);
-            this.nametextBox.Name = "nametextBox";
-            this.nametextBox.Size = new System.Drawing.Size(226, 34);
-            this.nametextBox.TabIndex = 2;
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // pswtextBox
-            // 
-            this.pswtextBox.Location = new System.Drawing.Point(189, 147);
-            this.pswtextBox.Name = "pswtextBox";
-            this.pswtextBox.PasswordChar = '*';
-            this.pswtextBox.Size = new System.Drawing.Size(226, 34);
-            this.pswtextBox.TabIndex = 3;
             // 
             // button1
             // 
@@ -120,6 +80,46 @@
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // pswtextBox
+            // 
+            this.pswtextBox.Location = new System.Drawing.Point(189, 147);
+            this.pswtextBox.Name = "pswtextBox";
+            this.pswtextBox.PasswordChar = '*';
+            this.pswtextBox.Size = new System.Drawing.Size(226, 34);
+            this.pswtextBox.TabIndex = 3;
+            // 
+            // nametextBox
+            // 
+            this.nametextBox.Location = new System.Drawing.Point(189, 78);
+            this.nametextBox.Name = "nametextBox";
+            this.nametextBox.Size = new System.Drawing.Size(226, 34);
+            this.nametextBox.TabIndex = 2;
+            // 
+            // pswLabel
+            // 
+            this.pswLabel.AutoSize = true;
+            this.pswLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.pswLabel.Location = new System.Drawing.Point(36, 150);
+            this.pswLabel.Name = "pswLabel";
+            this.pswLabel.Size = new System.Drawing.Size(115, 27);
+            this.pswLabel.TabIndex = 1;
+            this.pswLabel.Text = "Password";
+            // 
+            // userNameLabel
+            // 
+            this.userNameLabel.AutoSize = true;
+            this.userNameLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.userNameLabel.Location = new System.Drawing.Point(36, 81);
+            this.userNameLabel.Name = "userNameLabel";
+            this.userNameLabel.Size = new System.Drawing.Size(125, 27);
+            this.userNameLabel.TabIndex = 0;
+            this.userNameLabel.Text = "User name";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // noAccountlinkLabel
             // 
             this.noAccountlinkLabel.ActiveLinkColor = System.Drawing.Color.Gold;
@@ -128,13 +128,14 @@
             this.noAccountlinkLabel.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.noAccountlinkLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.noAccountlinkLabel.LinkColor = System.Drawing.Color.Olive;
-            this.noAccountlinkLabel.Location = new System.Drawing.Point(190, 327);
+            this.noAccountlinkLabel.Location = new System.Drawing.Point(192, 315);
             this.noAccountlinkLabel.Name = "noAccountlinkLabel";
             this.noAccountlinkLabel.Size = new System.Drawing.Size(218, 18);
             this.noAccountlinkLabel.TabIndex = 2;
             this.noAccountlinkLabel.TabStop = true;
             this.noAccountlinkLabel.Text = "Dont have account? Register";
             this.noAccountlinkLabel.VisitedLinkColor = System.Drawing.Color.Olive;
+            this.noAccountlinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.noAccountlinkLabel_LinkClicked);
             this.noAccountlinkLabel.MouseEnter += new System.EventHandler(this.noAccountlinkLabel_MouseEnter);
             this.noAccountlinkLabel.MouseLeave += new System.EventHandler(this.noAccountlinkLabel_MouseLeave);
             // 
@@ -151,79 +152,19 @@
             this.registergroupBox.Controls.Add(this.label1);
             this.registergroupBox.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.registergroupBox.ForeColor = System.Drawing.Color.Olive;
-            this.registergroupBox.Location = new System.Drawing.Point(93, 32);
+            this.registergroupBox.Location = new System.Drawing.Point(93, 20);
             this.registergroupBox.Name = "registergroupBox";
             this.registergroupBox.Size = new System.Drawing.Size(461, 313);
             this.registergroupBox.TabIndex = 3;
             this.registergroupBox.TabStop = false;
             this.registergroupBox.Text = "Register";
             // 
-            // label1
+            // textBox4
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label1.Location = new System.Drawing.Point(41, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "User name";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label2.Location = new System.Drawing.Point(41, 112);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 30);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Password";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label3.Location = new System.Drawing.Point(41, 211);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 30);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "E-mail";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(206, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(226, 37);
-            this.textBox1.TabIndex = 3;
-            // 
-            // contextMenuStrip2
-            // 
-            this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(206, 105);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(226, 37);
-            this.textBox2.TabIndex = 4;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(206, 153);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(226, 37);
-            this.textBox3.TabIndex = 5;
-            // 
-            // regSubButton
-            // 
-            this.regSubButton.ForeColor = System.Drawing.Color.Gold;
-            this.regSubButton.Location = new System.Drawing.Point(157, 265);
-            this.regSubButton.Name = "regSubButton";
-            this.regSubButton.Size = new System.Drawing.Size(141, 36);
-            this.regSubButton.TabIndex = 6;
-            this.regSubButton.Text = "Submit";
-            this.regSubButton.UseVisualStyleBackColor = true;
+            this.textBox4.Location = new System.Drawing.Point(206, 204);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(226, 37);
+            this.textBox4.TabIndex = 8;
             // 
             // label4
             // 
@@ -235,12 +176,71 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Password";
             // 
-            // textBox4
+            // regSubButton
             // 
-            this.textBox4.Location = new System.Drawing.Point(206, 204);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(226, 37);
-            this.textBox4.TabIndex = 8;
+            this.regSubButton.ForeColor = System.Drawing.Color.Gold;
+            this.regSubButton.Location = new System.Drawing.Point(157, 265);
+            this.regSubButton.Name = "regSubButton";
+            this.regSubButton.Size = new System.Drawing.Size(141, 36);
+            this.regSubButton.TabIndex = 6;
+            this.regSubButton.Text = "Submit";
+            this.regSubButton.UseVisualStyleBackColor = true;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(206, 153);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(226, 37);
+            this.textBox3.TabIndex = 5;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(206, 105);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(226, 37);
+            this.textBox2.TabIndex = 4;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(206, 58);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(226, 37);
+            this.textBox1.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label3.Location = new System.Drawing.Point(41, 211);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 30);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "E-mail";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label2.Location = new System.Drawing.Point(41, 112);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 30);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Password";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label1.Location = new System.Drawing.Point(41, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 30);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "User name";
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
             // 
             // haveAccountlinkLabel
             // 
@@ -250,16 +250,16 @@
             this.haveAccountlinkLabel.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.haveAccountlinkLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.haveAccountlinkLabel.LinkColor = System.Drawing.Color.Olive;
-            this.haveAccountlinkLabel.Location = new System.Drawing.Point(222, 358);
+            this.haveAccountlinkLabel.Location = new System.Drawing.Point(220, 347);
             this.haveAccountlinkLabel.Name = "haveAccountlinkLabel";
             this.haveAccountlinkLabel.Size = new System.Drawing.Size(195, 17);
             this.haveAccountlinkLabel.TabIndex = 5;
             this.haveAccountlinkLabel.TabStop = true;
             this.haveAccountlinkLabel.Text = "Do you have account? Log in";
             this.haveAccountlinkLabel.VisitedLinkColor = System.Drawing.Color.Olive;
+            this.haveAccountlinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.haveAccountlinkLabel_LinkClicked);
             this.haveAccountlinkLabel.MouseEnter += new System.EventHandler(this.haveAccountlinkLabel_MouseEnter);
             this.haveAccountlinkLabel.MouseLeave += new System.EventHandler(this.haveAccountlinkLabel_MouseLeave);
-            this.haveAccountlinkLabel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.haveAccountlinkLabel_MouseMove);
             // 
             // LoginControl
             // 
