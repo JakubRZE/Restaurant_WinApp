@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using RestaurantApp.Services;
+using System.Data.SqlClient;
 
 namespace RestaurantApp
 {
@@ -81,7 +82,10 @@ namespace RestaurantApp
                             obj.con.Open();
 
                             /// DB
-
+                            string insertUser = "INSERT INTO [dbo].[userTable] VALUES ('" + regUserNtextBox.Text+"', '"+regPasstextBox.Text+"', '"+mailTextBox.Text+"')";
+                            obj.cmd.Connection = obj.con;
+                            obj.cmd.CommandText = insertUser;
+                            obj.cmd.ExecuteNonQuery();
                             obj.con.Close();
                             MessageBox.Show("All good in da hood");
                         }
@@ -115,11 +119,12 @@ namespace RestaurantApp
                     Connect obj = new Connect();
                     obj.con.ConnectionString = obj.connectionString;
                     obj.con.Open();
-
-                    //DB
+                   // SqlDataAdapter adapter = new SqlDataAdapter(" SELECT ...");
+                    
+                 
 
                     obj.con.Close();
-                    MessageBox.Show("All good in da hood");
+                    MessageBox.Show("Logged");
                 }
                 catch(Exception ex)
                 {
