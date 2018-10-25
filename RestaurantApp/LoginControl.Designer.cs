@@ -132,7 +132,7 @@
             this.registergroupBox.Controls.Add(this.label1);
             this.registergroupBox.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.registergroupBox.ForeColor = System.Drawing.Color.Olive;
-            this.registergroupBox.Location = new System.Drawing.Point(76, 20);
+            this.registergroupBox.Location = new System.Drawing.Point(93, 20);
             this.registergroupBox.Name = "registergroupBox";
             this.registergroupBox.Size = new System.Drawing.Size(461, 313);
             this.registergroupBox.TabIndex = 3;

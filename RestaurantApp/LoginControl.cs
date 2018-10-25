@@ -79,15 +79,30 @@ namespace RestaurantApp
                         {
                             Connect obj = new Connect();
                             obj.con.ConnectionString = obj.connectionString;
-                            obj.con.Open();
 
-                            /// DB
-                            string insertUser = "INSERT INTO [dbo].[userTable] VALUES ('" + regUserNtextBox.Text+"', '"+regPasstextBox.Text+"', '"+mailTextBox.Text+"')";
-                            obj.cmd.Connection = obj.con;
-                            obj.cmd.CommandText = insertUser;
-                            obj.cmd.ExecuteNonQuery();
-                            obj.con.Close();
-                            MessageBox.Show("All good in da hood");
+                            ////
+                            obj.cmd = new SqlCommand("SELECT UserName FROM userTable WHERE UserName = @username", obj.con);
+                            obj.cmd.Parameters.AddWithValue("@username", regUserNtextBox.Text);
+                            obj.con.Open();
+                            SqlDataAdapter adapt = new SqlDataAdapter(obj.cmd);
+                            DataSet ds = new DataSet();
+                            adapt.Fill(ds);
+                            int count = ds.Tables[0].Rows.Count;
+                            if (count == 0)
+                            {
+                                string insertUser = "INSERT INTO [dbo].[userTable] VALUES ('" + regUserNtextBox.Text + "', '" + regPasstextBox.Text + "', '" + mailTextBox.Text + "')";
+                                obj.cmd.Connection = obj.con;
+                                obj.cmd.CommandText = insertUser;
+                                obj.cmd.ExecuteNonQuery();
+                                obj.con.Close();
+
+                                MessageBox.Show("Registered");
+                            }
+                            else
+                            {
+                                obj.con.Close();
+                                MessageBox.Show("User already exist");
+                            }  
                         }
                         catch (Exception ex)
                         {
@@ -118,13 +133,24 @@ namespace RestaurantApp
                 {
                     Connect obj = new Connect();
                     obj.con.ConnectionString = obj.connectionString;
+                    obj.cmd = new SqlCommand("SELECT * FROM userTable WHERE userName = @username and Password = @password", obj.con);
+                    obj.cmd.Parameters.AddWithValue("@username", nametextBox.Text);
+                    obj.cmd.Parameters.AddWithValue("@password", pswtextBox.Text);
                     obj.con.Open();
-                   // SqlDataAdapter adapter = new SqlDataAdapter(" SELECT ...");
-                    
-                 
-
+                    SqlDataAdapter adapt = new SqlDataAdapter(obj.cmd);
+                    DataSet ds = new DataSet();
+                    adapt.Fill(ds);
                     obj.con.Close();
-                    MessageBox.Show("Logged");
+                    int count = ds.Tables[0].Rows.Count;
+
+                    if (count == 1)
+                    {
+                        MessageBox.Show("Logged");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid user name or password");
+                    }
                 }
                 catch(Exception ex)
                 {
@@ -133,7 +159,7 @@ namespace RestaurantApp
             }
             else
             {
-                MessageBox.Show("Invalid user name or password");
+                MessageBox.Show("Enter user name or password");
             }
         }
 
