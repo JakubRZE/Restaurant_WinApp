@@ -1,5 +1,10 @@
 # Restaurant_WinApp
-WinForms application...
+.NET Windows Forms application. Inspired by the Mcdonald app.<br />
+Allows the Users to log in, register new account, search for restaurant, <br />
+look through nutrition table and menu.
+
+
 
 Screenshot:
-![winapp](https://user-images.githubusercontent.com/38703432/47314540-3af32900-d642-11e8-9d80-190e123b4cbb.png)
+![winsapp](https://user-images.githubusercontent.com/38703432/47466888-cf50bd80-d7f3-11e8-9389-8b55027045f0.png)
+
