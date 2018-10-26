@@ -88,5 +88,32 @@ namespace RestaurantApp
         {
             Application.Exit();
         }
+
+        //LOG OFF
+        private void SettingspictureBox_Click(object sender, EventArgs e)
+        {
+            if (UserInfo.userName == null || UserInfo.userName == "")
+            {
+                MessageBox.Show("You are not logged in");
+            }
+            else
+            {
+                UserInfo.userName = "";
+                defaultControl1.BringToFront();
+                MessageBox.Show("You are logged off");
+            }
+        }
+
+        private void SettingspictureBox_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(this.SettingspictureBox, "Log out!");
+        }
+
+        private void ExitpictureBox_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tt = new ToolTip();
+            tt.SetToolTip(this.SettingspictureBox, "Exit!");
+        }
     }
 }

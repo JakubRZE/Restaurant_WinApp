@@ -77,7 +77,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
@@ -204,6 +204,7 @@
             // 
             // SettingspictureBox
             // 
+            this.SettingspictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SettingspictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SettingspictureBox.Image")));
             this.SettingspictureBox.Location = new System.Drawing.Point(763, 20);
             this.SettingspictureBox.Name = "SettingspictureBox";
@@ -211,9 +212,13 @@
             this.SettingspictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.SettingspictureBox.TabIndex = 3;
             this.SettingspictureBox.TabStop = false;
+            this.SettingspictureBox.Tag = "";
+            this.SettingspictureBox.Click += new System.EventHandler(this.SettingspictureBox_Click);
+            this.SettingspictureBox.MouseHover += new System.EventHandler(this.SettingspictureBox_MouseHover);
             // 
             // ExitpictureBox
             // 
+            this.ExitpictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ExitpictureBox.Image = ((System.Drawing.Image)(resources.GetObject("ExitpictureBox.Image")));
             this.ExitpictureBox.Location = new System.Drawing.Point(793, 20);
             this.ExitpictureBox.Name = "ExitpictureBox";
@@ -222,6 +227,7 @@
             this.ExitpictureBox.TabIndex = 4;
             this.ExitpictureBox.TabStop = false;
             this.ExitpictureBox.Click += new System.EventHandler(this.ExitpictureBox_Click);
+            this.ExitpictureBox.MouseHover += new System.EventHandler(this.ExitpictureBox_MouseHover);
             // 
             // defaultControl1
             // 
