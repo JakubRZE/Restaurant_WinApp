@@ -15,7 +15,7 @@ namespace RestaurantApp
 {
     public partial class LoginControl : UserControl
     {
-        public LoginControl control { get; set; }
+        public AccountControl control { get; set; }
         public Panel panel { get; set; }
         public Button button { get; set; }
 
@@ -157,7 +157,9 @@ namespace RestaurantApp
                     if (count == 1)
                     {
                         UserInfo.userName = nametextBox.Text;
-                        MessageBox.Show("Logged");
+                        control.ChangeUserLabel();
+                        control.BringToFront();
+                        
                     }
                     else
                     {

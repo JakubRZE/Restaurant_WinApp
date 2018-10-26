@@ -13,10 +13,16 @@ namespace RestaurantApp
 {
     public partial class AccountControl : UserControl
     {
-
+ 
         public AccountControl()
         {
             InitializeComponent();
         }
+
+        public void ChangeUserLabel()
+        {
+            userLabel.Text = UserInfo.userName;
+        }
+
     }
 }

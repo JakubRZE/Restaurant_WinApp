@@ -21,6 +21,9 @@ namespace RestaurantApp
             defaultControl1.panel =SidePanel;
             defaultControl1.button = accountBtn;
 
+            loginControl1.control = accountControl1;
+            loginControl1.panel = SidePanel;
+            loginControl1.button = accountBtn;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -63,7 +66,6 @@ namespace RestaurantApp
             }
             else
             {
-                //userLabel.Text = UserInfo.userName;
                 accountControl1.BringToFront();
             }
         }
