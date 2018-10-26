@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountControl.Designer.cs">
+      <DependentUpon>AccountControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="ContactControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -90,8 +96,12 @@
     <Compile Include="RestaurantControl.Designer.cs">
       <DependentUpon>RestaurantControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Services\UserInfo.cs" />
     <Compile Include="Services\Connect.cs" />
     <Compile Include="Services\SidePanelSetup.cs" />
+    <EmbeddedResource Include="AccountControl.resx">
+      <DependentUpon>AccountControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ContactControl.resx">
       <DependentUpon>ContactControl.cs</DependentUpon>
     </EmbeddedResource>

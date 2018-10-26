@@ -10,12 +10,18 @@ using System.Windows.Forms;
 using RestaurantApp.Services;
 using System.Data.SqlClient;
 
+
 namespace RestaurantApp
 {
     public partial class LoginControl : UserControl
     {
+        public LoginControl control { get; set; }
+        public Panel panel { get; set; }
+        public Button button { get; set; }
+
         public LoginControl()
         {
+
             InitializeComponent();
         }
 
@@ -67,6 +73,8 @@ namespace RestaurantApp
             ShowRegisterForm();
         }
 
+
+        //REGISTER
         private void regSubButton_Click(object sender, EventArgs e)
         {
             if (regUserNtextBox.Text != "" && regPasstextBox.Text != "")
@@ -96,7 +104,8 @@ namespace RestaurantApp
                                 obj.cmd.ExecuteNonQuery();
                                 obj.con.Close();
 
-                                MessageBox.Show("Registered");
+                                MessageBox.Show("Registered successfully! Now you can log in.");
+                                ShowLoginForm();
                             }
                             else
                             {
@@ -125,6 +134,8 @@ namespace RestaurantApp
             }
         }
 
+
+        // LOGIN
         private void button1_Click(object sender, EventArgs e)
         {
             if (nametextBox.Text != "" && pswtextBox.Text != "")
@@ -145,6 +156,7 @@ namespace RestaurantApp
 
                     if (count == 1)
                     {
+                        UserInfo.userName = nametextBox.Text;
                         MessageBox.Show("Logged");
                     }
                     else

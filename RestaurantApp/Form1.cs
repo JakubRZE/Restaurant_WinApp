@@ -56,8 +56,16 @@ namespace RestaurantApp
         private void accountBtn_Click(object sender, EventArgs e)
         {
             SidePanelSetup.Setup(SidePanel, accountBtn);
-            loginControl1.ShowLoginForm();
-            loginControl1.BringToFront();
+            if (UserInfo.userName == null || UserInfo.userName == "")
+            {
+                loginControl1.ShowLoginForm();
+                loginControl1.BringToFront();
+            }
+            else
+            {
+                //userLabel.Text = UserInfo.userName;
+                accountControl1.BringToFront();
+            }
         }
 
         private void contactBtn_Click(object sender, EventArgs e)
