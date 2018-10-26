@@ -6,5 +6,5 @@ look through nutrition table and menu.
 
 
 Screenshot:
-![winsapp](https://user-images.githubusercontent.com/38703432/47466888-cf50bd80-d7f3-11e8-9389-8b55027045f0.png)
+![wformsapp](https://user-images.githubusercontent.com/38703432/47574022-f962c680-d93e-11e8-9873-82023f9f00d5.png)
 
