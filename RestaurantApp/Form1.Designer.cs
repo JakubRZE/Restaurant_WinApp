@@ -48,6 +48,7 @@
             this.nutritionControl1 = new RestaurantApp.NutritionControl();
             this.contactControl1 = new RestaurantApp.ContactControl();
             this.accountControl1 = new RestaurantApp.AccountControl();
+            this.welcomeControl1 = new RestaurantApp.WelcomeControl();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SettingspictureBox)).BeginInit();
@@ -277,11 +278,19 @@
             this.accountControl1.Size = new System.Drawing.Size(654, 412);
             this.accountControl1.TabIndex = 11;
             // 
+            // welcomeControl1
+            // 
+            this.welcomeControl1.Location = new System.Drawing.Point(175, 50);
+            this.welcomeControl1.Name = "welcomeControl1";
+            this.welcomeControl1.Size = new System.Drawing.Size(654, 412);
+            this.welcomeControl1.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(829, 462);
+            this.Controls.Add(this.welcomeControl1);
             this.Controls.Add(this.accountControl1);
             this.Controls.Add(this.contactControl1);
             this.Controls.Add(this.nutritionControl1);
@@ -329,6 +338,7 @@
         private NutritionControl nutritionControl1;
         private ContactControl contactControl1;
         private AccountControl accountControl1;
+        private WelcomeControl welcomeControl1;
     }
 }
 
