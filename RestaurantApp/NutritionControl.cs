@@ -17,13 +17,6 @@ namespace RestaurantApp
         public NutritionControl()
         {
             InitializeComponent();
-
-            // @"App_data\pdf\nutritionfacts.pdf"
-
-            webBrowser.Navigate("file:///" + Application.StartupPath  + "\\nutritionfacts.pdf");
-            webBrowser.Show();
-
         }
-
     }
 }
