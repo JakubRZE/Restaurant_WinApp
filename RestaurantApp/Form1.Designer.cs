@@ -136,7 +136,7 @@
             this.nutBtn.Name = "nutBtn";
             this.nutBtn.Size = new System.Drawing.Size(163, 42);
             this.nutBtn.TabIndex = 6;
-            this.nutBtn.Text = "   Nutrition box ";
+            this.nutBtn.Text = "   Nutrition facts";
             this.nutBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.nutBtn.UseVisualStyleBackColor = true;
             this.nutBtn.Click += new System.EventHandler(this.nutBtn_Click);

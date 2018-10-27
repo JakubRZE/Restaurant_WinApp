@@ -113,7 +113,7 @@ namespace RestaurantApp
         private void ExitpictureBox_MouseHover(object sender, EventArgs e)
         {
             ToolTip tt = new ToolTip();
-            tt.SetToolTip(this.SettingspictureBox, "Exit!");
+            tt.SetToolTip(this.ExitpictureBox, "Exit!");
         }
     }
 }

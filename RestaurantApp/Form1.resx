@@ -239,12 +239,9 @@
   <data name="SettingspictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAARZJREFUSEvl1UtKA0EURuF27gNdhgsQ3YE6C1GnrkAX42PuUFfkUDDEDZgMfZwD
-        XdDc3Epo6J7oDx803bduhapOdfNvco4Fflpen2GwPKE0L7w3SA7xhjiB93zWK1t4wDOu8IhvxOaFz6yx
-        9gWOtUc118ga9WGPNNv4QDaoD3vYayW3yAboHVPstCZ4RVarG6zkBEvEYpsfIGYfM8R6exwjzRHiJP7y
-        Wi7QrXWsPdYmTpCuZ5tddGsduzGjTpAtkRtai+9/t9ax1SWqbbJvixsa48b32uRNr6kb6pLs4RJZ8yJ9
-        TYf6o81R3bdRjwpTDjsPLjfQ6y9kjeSze1jrAXmHtYddlkGP61pG/eCY+Mn8xCn+fJrmFyEI1gTGlr9o
-        AAAAAElFTkSuQmCC
+        wwAADsMBx2+oZAAAAIhJREFUSEvtle0JgDAMBbuEM7mKouM6gQ6i7ymBEhr6QYr+8OBAJM2BgoafWka4
+        w7NRnuUOkwOmDtbIiIkMtZI9/7nABIfn8sY1sEDOblAirgEu5fI44hogOtIckPulmlgD8eESTbIDCrdH
+        lKL7S15hvJy4BsgMZTlxD2jeD3T/XHf/4fwoQrgArgegY4ZPS+AAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="ExitpictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
