@@ -76,6 +76,7 @@ namespace RestaurantApp
                 accountControl1.ChangeUserLabel();
                 accountControl1.BringToFront();
             }
+            accountControl1.hideChangePanel();
         }
 
         private void contactBtn_Click(object sender, EventArgs e)

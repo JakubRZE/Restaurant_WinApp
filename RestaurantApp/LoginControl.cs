@@ -104,6 +104,7 @@ namespace RestaurantApp
                                 obj.cmd.ExecuteNonQuery();
                                 obj.con.Close();
 
+                                regPasstextBox.Text = "";
                                 MessageBox.Show("Registered successfully! Now you can log in.");
                                 ShowLoginForm();
                             }
@@ -159,6 +160,7 @@ namespace RestaurantApp
                         UserInfo.userName = nametextBox.Text;
                         SidePanelSetup.Setup(panel,button);
                         control.ChangeUserLabel();
+                        pswtextBox.Text = "";
                         control.BringToFront();
                     }
                     else
