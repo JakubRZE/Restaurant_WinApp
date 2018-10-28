@@ -43,6 +43,13 @@ namespace RestaurantApp
             haveAccountlinkLabel.Visible = true;
         }
 
+        public void ClearForm()
+        {
+            regConfPassTextBoc.Text = "";
+            mailTextBox.Text = "";
+            regUserNtextBox.Text = "";
+        }
+
         private void noAccountlinkLabel_MouseEnter(object sender, EventArgs e)
         {
             noAccountlinkLabel.LinkColor = Color.DarkOliveGreen;
@@ -106,6 +113,7 @@ namespace RestaurantApp
 
                                 regPasstextBox.Text = "";
                                 MessageBox.Show("Registered successfully! Now you can log in.");
+                                ClearForm();
                                 ShowLoginForm();
                             }
                             else

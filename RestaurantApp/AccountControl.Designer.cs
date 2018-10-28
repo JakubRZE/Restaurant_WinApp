@@ -242,6 +242,7 @@
             this.confNewPswtextBox.Location = new System.Drawing.Point(226, 168);
             this.confNewPswtextBox.MaxLength = 15;
             this.confNewPswtextBox.Name = "confNewPswtextBox";
+            this.confNewPswtextBox.PasswordChar = '*';
             this.confNewPswtextBox.Size = new System.Drawing.Size(198, 30);
             this.confNewPswtextBox.TabIndex = 6;
             // 
@@ -271,6 +272,7 @@
             this.newPswtextBox.Location = new System.Drawing.Point(226, 116);
             this.newPswtextBox.MaxLength = 15;
             this.newPswtextBox.Name = "newPswtextBox";
+            this.newPswtextBox.PasswordChar = '*';
             this.newPswtextBox.Size = new System.Drawing.Size(198, 30);
             this.newPswtextBox.TabIndex = 3;
             // 
@@ -279,6 +281,7 @@
             this.oldPswtextBox.Location = new System.Drawing.Point(226, 64);
             this.oldPswtextBox.MaxLength = 15;
             this.oldPswtextBox.Name = "oldPswtextBox";
+            this.oldPswtextBox.PasswordChar = '*';
             this.oldPswtextBox.Size = new System.Drawing.Size(198, 30);
             this.oldPswtextBox.TabIndex = 2;
             // 

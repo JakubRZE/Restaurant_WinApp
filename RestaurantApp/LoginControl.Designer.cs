@@ -92,6 +92,7 @@
             // 
             // nametextBox
             // 
+            this.nametextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.nametextBox.Location = new System.Drawing.Point(189, 78);
             this.nametextBox.MaxLength = 15;
             this.nametextBox.Name = "nametextBox";
@@ -130,9 +131,9 @@
             this.registergroupBox.Controls.Add(this.label3);
             this.registergroupBox.Controls.Add(this.label2);
             this.registergroupBox.Controls.Add(this.label1);
-            this.registergroupBox.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.registergroupBox.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.registergroupBox.ForeColor = System.Drawing.Color.Olive;
-            this.registergroupBox.Location = new System.Drawing.Point(93, 20);
+            this.registergroupBox.Location = new System.Drawing.Point(84, 22);
             this.registergroupBox.Name = "registergroupBox";
             this.registergroupBox.Size = new System.Drawing.Size(461, 313);
             this.registergroupBox.TabIndex = 3;
@@ -143,7 +144,7 @@
             // 
             this.mailTextBox.Location = new System.Drawing.Point(206, 211);
             this.mailTextBox.Name = "mailTextBox";
-            this.mailTextBox.Size = new System.Drawing.Size(226, 37);
+            this.mailTextBox.Size = new System.Drawing.Size(226, 34);
             this.mailTextBox.TabIndex = 8;
             // 
             // label4
@@ -152,7 +153,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label4.Location = new System.Drawing.Point(41, 145);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 60);
+            this.label4.Size = new System.Drawing.Size(114, 54);
             this.label4.TabIndex = 7;
             this.label4.Text = "Confim\r\npassword";
             // 
@@ -173,7 +174,7 @@
             this.regConfPassTextBoc.MaxLength = 15;
             this.regConfPassTextBoc.Name = "regConfPassTextBoc";
             this.regConfPassTextBoc.PasswordChar = '*';
-            this.regConfPassTextBoc.Size = new System.Drawing.Size(226, 37);
+            this.regConfPassTextBoc.Size = new System.Drawing.Size(226, 34);
             this.regConfPassTextBoc.TabIndex = 5;
             // 
             // regPasstextBox
@@ -182,15 +183,16 @@
             this.regPasstextBox.MaxLength = 15;
             this.regPasstextBox.Name = "regPasstextBox";
             this.regPasstextBox.PasswordChar = '*';
-            this.regPasstextBox.Size = new System.Drawing.Size(226, 37);
+            this.regPasstextBox.Size = new System.Drawing.Size(226, 34);
             this.regPasstextBox.TabIndex = 4;
             // 
             // regUserNtextBox
             // 
+            this.regUserNtextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.regUserNtextBox.Location = new System.Drawing.Point(206, 51);
             this.regUserNtextBox.MaxLength = 15;
             this.regUserNtextBox.Name = "regUserNtextBox";
-            this.regUserNtextBox.Size = new System.Drawing.Size(226, 37);
+            this.regUserNtextBox.Size = new System.Drawing.Size(226, 34);
             this.regUserNtextBox.TabIndex = 3;
             this.regUserNtextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.regUserNtextBox_KeyPress);
             // 
@@ -200,7 +202,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label3.Location = new System.Drawing.Point(41, 215);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 30);
+            this.label3.Size = new System.Drawing.Size(76, 27);
             this.label3.TabIndex = 2;
             this.label3.Text = "E-mail";
             // 
@@ -210,7 +212,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label2.Location = new System.Drawing.Point(40, 105);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 30);
+            this.label2.Size = new System.Drawing.Size(115, 27);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
             // 
@@ -220,7 +222,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.Location = new System.Drawing.Point(40, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 30);
+            this.label1.Size = new System.Drawing.Size(125, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "User name";
             // 
