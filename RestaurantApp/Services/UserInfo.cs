@@ -9,5 +9,6 @@ namespace RestaurantApp.Services
     public static class UserInfo
     {
         public static string userName;
+        public static string userMail;
     }
 }

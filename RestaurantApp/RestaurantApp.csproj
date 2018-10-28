@@ -99,6 +99,7 @@
     <Compile Include="Services\UserInfo.cs" />
     <Compile Include="Services\Connect.cs" />
     <Compile Include="Services\SidePanelSetup.cs" />
+    <Compile Include="Services\Validation.cs" />
     <Compile Include="WelcomeControl.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -100,6 +100,7 @@ namespace RestaurantApp
             else
             {
                 UserInfo.userName = "";
+                UserInfo.userMail = "";
                 defaultControl1.BringToFront();
                 MessageBox.Show("You are logged off");
             }

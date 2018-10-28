@@ -23,6 +23,7 @@ namespace RestaurantApp
         public void ChangeUserLabel()
         {
             userLabel.Text = UserInfo.userName;
+            userMailLabel.Text = UserInfo.userMail;
         }
 
         public void hideChangePanel()
@@ -33,7 +34,6 @@ namespace RestaurantApp
 
         private void changeMailLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
             mailGroupBox.Visible = true;
         }
 
@@ -71,8 +71,9 @@ namespace RestaurantApp
                             obj.con.Open();
                             obj.cmd.ExecuteNonQuery();
                             obj.con.Close();
+                            ChangeUserLabel();
                             hideChangePanel();
-                            MessageBox.Show("sukses");
+                            MessageBox.Show("Your password has been changed successfully!");
                         }
                         catch (Exception ex)
                         {
@@ -100,6 +101,40 @@ namespace RestaurantApp
         //CHANGE MAIL
         private void changeEmialBtn_Click(object sender, EventArgs e)
         {
+
+            if (Validation.emailValidating(newEmailtextBox))
+            {
+                if (newEmailtextBox.Text == repNewEmialtextBox.Text)
+                {
+                    Connect obj = new Connect();
+                    obj.con.ConnectionString = obj.connectionString;
+                    obj.cmd = new SqlCommand("UPDATE userTable SET Mail =@newEmial WHERE UserName =@userName", obj.con);
+                    obj.cmd.Parameters.AddWithValue("@newEmial", newEmailtextBox.Text);
+                    obj.cmd.Parameters.AddWithValue("@userName", UserInfo.userName);
+                    try
+                    {
+                        obj.con.Open();
+                        obj.cmd.ExecuteNonQuery();
+                        obj.con.Close();
+                        hideChangePanel();
+                        UserInfo.userMail = newEmailtextBox.Text;
+                        ChangeUserLabel();
+                        MessageBox.Show("Your adress email has been changed successfully!");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Emails do not match!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid email adress");
+            }
 
         }
 

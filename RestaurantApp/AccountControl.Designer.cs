@@ -53,6 +53,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.label7 = new System.Windows.Forms.Label();
+            this.userMailLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.mailGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitMailPictureBox)).BeginInit();
@@ -65,7 +67,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.Olive;
-            this.label1.Location = new System.Drawing.Point(57, 10);
+            this.label1.Location = new System.Drawing.Point(57, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(342, 45);
             this.label1.TabIndex = 0;
@@ -76,7 +78,7 @@
             this.userLabel.AutoSize = true;
             this.userLabel.Font = new System.Drawing.Font("Arial Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.userLabel.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.userLabel.Location = new System.Drawing.Point(56, 67);
+            this.userLabel.Location = new System.Drawing.Point(56, 63);
             this.userLabel.Name = "userLabel";
             this.userLabel.Size = new System.Drawing.Size(242, 52);
             this.userLabel.TabIndex = 1;
@@ -107,7 +109,7 @@
             this.changePswLinkLabel.Font = new System.Drawing.Font("Arial Black", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.changePswLinkLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.changePswLinkLabel.LinkColor = System.Drawing.Color.Goldenrod;
-            this.changePswLinkLabel.Location = new System.Drawing.Point(23, 91);
+            this.changePswLinkLabel.Location = new System.Drawing.Point(23, 93);
             this.changePswLinkLabel.Name = "changePswLinkLabel";
             this.changePswLinkLabel.Size = new System.Drawing.Size(274, 30);
             this.changePswLinkLabel.TabIndex = 3;
@@ -138,7 +140,7 @@
             this.mailGroupBox.Controls.Add(this.label3);
             this.mailGroupBox.Controls.Add(this.label2);
             this.mailGroupBox.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.mailGroupBox.Location = new System.Drawing.Point(99, 38);
+            this.mailGroupBox.Location = new System.Drawing.Point(103, 48);
             this.mailGroupBox.Name = "mailGroupBox";
             this.mailGroupBox.Size = new System.Drawing.Size(456, 313);
             this.mailGroupBox.TabIndex = 0;
@@ -215,7 +217,7 @@
             this.pswGroupBox.Controls.Add(this.label4);
             this.pswGroupBox.Controls.Add(this.label5);
             this.pswGroupBox.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.pswGroupBox.Location = new System.Drawing.Point(82, 51);
+            this.pswGroupBox.Location = new System.Drawing.Point(81, 57);
             this.pswGroupBox.Name = "pswGroupBox";
             this.pswGroupBox.Size = new System.Drawing.Size(456, 313);
             this.pswGroupBox.TabIndex = 5;
@@ -305,12 +307,36 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.ForeColor = System.Drawing.Color.Olive;
+            this.label7.Location = new System.Drawing.Point(60, 141);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(82, 27);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "E-mail:";
+            // 
+            // userMailLabel
+            // 
+            this.userMailLabel.AutoSize = true;
+            this.userMailLabel.Font = new System.Drawing.Font("Arial Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.userMailLabel.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.userMailLabel.Location = new System.Drawing.Point(148, 141);
+            this.userMailLabel.Name = "userMailLabel";
+            this.userMailLabel.Size = new System.Drawing.Size(56, 27);
+            this.userMailLabel.TabIndex = 7;
+            this.userMailLabel.Text = "mail";
+            // 
             // AccountControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pswGroupBox);
             this.Controls.Add(this.mailGroupBox);
+            this.Controls.Add(this.userMailLabel);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.userLabel);
             this.Controls.Add(this.label1);
@@ -354,5 +380,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox exitPswPictureBox;
         private System.Windows.Forms.PictureBox exitMailPictureBox;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label userMailLabel;
     }
 }

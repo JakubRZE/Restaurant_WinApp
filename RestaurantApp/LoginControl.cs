@@ -79,7 +79,7 @@ namespace RestaurantApp
         {
             if (regUserNtextBox.Text != "" && regPasstextBox.Text != "")
             {
-                if (mail_Validating(mailTextBox))
+                if (Validation.emailValidating(mailTextBox))
                 {
                     if (regPasstextBox.Text == regConfPassTextBoc.Text)
                     {
@@ -152,12 +152,11 @@ namespace RestaurantApp
                     SqlDataAdapter adapt = new SqlDataAdapter(obj.cmd);
                     DataSet ds = new DataSet();
                     adapt.Fill(ds);
-                    obj.con.Close();
                     int count = ds.Tables[0].Rows.Count;
-
                     if (count == 1)
                     {
                         UserInfo.userName = nametextBox.Text;
+                        UserInfo.userMail = ds.Tables[0].Rows[0]["Mail"].ToString(); ///////////////////////////
                         SidePanelSetup.Setup(panel,button);
                         control.ChangeUserLabel();
                         pswtextBox.Text = "";
@@ -167,6 +166,7 @@ namespace RestaurantApp
                     {
                         MessageBox.Show("Invalid user name or password");
                     }
+                    obj.con.Close();
                 }
                 catch(Exception ex)
                 {
@@ -182,13 +182,6 @@ namespace RestaurantApp
         private void nametextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
-        }
-
-        public bool mail_Validating(TextBox tekstbox)
-        {
-            System.Text.RegularExpressions.Regex mail = new System.Text.RegularExpressions.Regex(@"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$");
-            return mail.IsMatch(tekstbox.Text) ? true : false;
-         
         }
 
         private void regUserNtextBox_KeyPress(object sender, KeyPressEventArgs e)
